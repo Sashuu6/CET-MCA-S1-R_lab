@@ -1,0 +1,15 @@
+p=0.3
+q=1-p
+par(mfrow=c(3,3))
+n=5
+plot(0:n,dbinom(0:n,n,p),type = "h")
+plot(0:n,pnorm(0:n,n*p,sqrt(n*p*q)),type = "h")
+n=10
+plot(0:n,dbinom(0:n,n,p),type = "h")
+plot(0:n,pnorm(0:n,n*p,sqrt(n*p*q)),type = "h")
+n=20
+plot(0:n,dbinom(0:n,n,p),type = "h")
+plot(0:n,pnorm(0:n,n*p,sqrt(n*p*q)),type = "h")
+n=50
+plot(0:n,dbinom(0:n,n,p),type = "h")
+plot(0:n,pnorm(0:n,n*p,sqrt(n*p*q)),type = "h")
